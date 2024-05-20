@@ -1,0 +1,125 @@
+body{
+  margin: 0%;
+  background-color: rgb(12, 7, 26);
+  font-family:"Cormorant+Garamond";
+}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap');
+
+ .menu{
+    background: rgb(12, 7, 26);
+    height: 100px;
+    padding: 30px 0;
+    color: #333;
+}
+.menu ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background:#000;
+    margin:0;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px;
+    display: flex;
+}
+.menu li a:hover{
+    text-decoration: underline;
+}
+.casa img{
+max-height: 300px;
+margin-right: 30px;
+}
+.casa{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.casa .item img{
+max-height: 300px;
+margin:0 auto 10px;
+}
+
+/*slider das casas do harry potter*/
+.slider-casas{
+  max-width: 500px;
+  margin: 0 auto 60px !important;
+}
+.slider-casas .item img {
+  max-height: 200px;
+  margin: 0 auto 10px;
+}
+
+.slider-casas .item{
+  text-align: center;
+}
+.slider-casas .item a{
+  margin: 20px 0;
+  display: block;
+}
+/*textos da página*/
+.casa p{
+  line-height: 1.5;
+}
+p,h2{
+  color: white;
+}
+span{
+  color: white;
+}
+.slider-casas .slick-dots li button::before{
+  color: white;
+}
+.slider-casas .slick-dots li.slick-active button::before{
+  color: white;
+}
+
+
+@media (max-width:767px){
+  .menu{
+    padding: 0;
+    max-height: 15px;
+    }
+  .menu-mobile,.sair-menu{
+    display:flex;
+    align-items: center;
+    font-size: 30px;
+    background-color:#000;
+  }
+  .menu:not(.active) ul, .menu:not(.active) .sair-menu,.menu.active .menu-mobile{
+    display:none;
+    }
+  .menu.active ul{
+      padding: 15px;
+      display:block;
+      position: relative;
+    }
+    .casa{
+      max-width: calc( 100% - 60px);
+      display: block;
+      padding: 30px;
+    }
+  .casa img{
+    max-height: 200px;
+    text-align:center;
+    width: 30opx;
+    margin: 50px;
+  }
+
+}
+@media (min-width: 786px){
+  .menu-mobile,.sair-menu{
+    display:none;
+  }
+  .menu.active ul{
+    display:none;
+    }
+
+}
